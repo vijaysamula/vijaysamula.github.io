@@ -40,11 +40,13 @@
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
                 gltf-model='https://vijaysamula.github.io/trex/ETERRY.gltf'
-                scale="20 20 20"
+                scale="30 30 30"
                 position="150 300 -100"
                 >
             </a-entity>
         </a-nft>
-        <a-entity camera='near:0.1; far: 50000' gps-camera="minDistance: 50; positionMinAccuracy: 300; gpsMinDistance: 5;" rotation-reader></a-entity>
+        <a-entity id="rig" position="25 10 0">
+          <a-entity id="camera" camera look-controls></a-entity>
+        </a-entity>
     </a-scene>
 </body>
